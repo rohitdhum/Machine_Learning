@@ -3,9 +3,9 @@ import pandas as pd
 import joblib
 import os
 
-st.set_page_config(page_title="Marvellous Infosystems Dashboard")
+st.set_page_config(page_title="Customer Churn Prediction Dashboard")
 
-st.title("Marvellous Infosystems By Piyush Khairnar") 
+st.title("Prediction Dashboard By Rohit Dhumal") 
 st.header("Customer Prediction Churn")
 st.write("Machine Learning Application Dashboard")
 
@@ -38,4 +38,4 @@ if st.button("Predict Churn"):
 
 st.divider()
 
-st.caption("Marvellous Infosystem Dashboard")
+st.caption("Customer Churn Prediction Dashboard")
