@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
 import joblib
+import os
 
 st.set_page_config(page_title="Marvellous Infosystems Dashboard")
 
@@ -8,7 +9,10 @@ st.title("Marvellous Infosystems By Piyush Khairnar")
 st.header("Customer Prediction Churn")
 st.write("Machine Learning Application Dashboard")
 
-model = joblib.load("Marvellous_ML_Customer_Churn.pkl")
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+MODEL_PATH = os.path.join(BASE_DIR, "Marvellous_ML_Customer_Churn.pkl")
+
+model = joblib.load(MODEL_PATH)
 
 st.subheader("Enter Customer Details")
 
